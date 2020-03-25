@@ -1,0 +1,18 @@
+pos=-1
+def search(array,key):
+    i=0
+    while i<=len(array)-1:
+        if array[i]==key:
+            globals ()['pos']=i
+            return True
+        else:
+            i+=1
+    return False
+
+
+array=[2,3,4,5,7,9,8]
+key=9
+if search(array,key):
+    print("Found",pos)
+else:
+    print("Not Found")
